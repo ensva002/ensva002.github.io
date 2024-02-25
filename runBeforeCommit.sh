@@ -2,10 +2,10 @@
 
 #============== TRIM HTML ==============
 
-dir="markdown/"
+dir="markdown"
 
 # Destination directory
-dest="pages/"
+dest="pages"
 
 # Loop over each HTML file in the directory
 for filepath in "$dir"/*.md
@@ -13,7 +13,7 @@ do
     # Extract the filename from the filepath
     filename=$(basename "$filepath" .md)
 
-    pandoc -f markdown $filepath > $dir/$filename.html
+    pandoc -f markdown+emoji $filepath > $dir/$filename.html
     sed -E -i 's/<pre\sclass="([^"]*)">/<pre class="language-\1">/g' $dir/$filename.html
     # Replace underscores with spaces
     title=${filename//_/ }
@@ -38,6 +38,7 @@ do
 </head>
 <body>
     <div id=\"canvas\">
+        <div id=\"overview\"></div>
         <div id=\"content\">
             <h1>$title</h1>
             $content
@@ -48,9 +49,8 @@ do
 
     # Write the new content to a file in the destination directory
     echo "$new_content" > "$dest/$filename.html"
-
     # Remove the original file
-        rm "$dir/$filename.html"
+    rm "$dir/$filename.html"
 
 done
 
@@ -65,3 +65,4 @@ find $dir -name "*.html" ! -name "index.html" | sort -V | awk -v ORS=', ' '{ sub
 
 # End of JSON
 sed -i '$ s/..$/] }/' pagelist.json
+echo "complete"
