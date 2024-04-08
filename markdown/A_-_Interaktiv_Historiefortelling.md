@@ -1,4 +1,4 @@
-For å komme i gang med å lage en interaktiv historie i Godot kan du bruke denne malen: TODO(link her)
+For å komme i gang med å lage en interaktiv historie i Godot kan du bruke denne malen:
 
 Når du åpner prosjektet i Godot, har du en mappe som heter *template* åpne den og åpne senen. *(sener har .tscn som filending)*
 
@@ -42,9 +42,11 @@ Den generer en fil som heter *scene_flowchart.md*. Åpne denne med en markdown l
 
 ![](../media/A_graf.png)
 
-Grønn ramme = hoved senen
-Gul ramme = sene som ikke blir linket til
-Rød stiplet ramme = Link til sene er brutt
+- Grønn ramme = hoved senen
+
+- Gul ramme = sene som ikke blir linket til
+
+- Rød stiplet ramme = Link til sene er brutt
 
 I dette eksempelet ser vi at linken til senen som heter slott er brutt, det kan skje om du blant annet har gitt senen nytt navn, flyttet den til en annen mappe eller slettet den.
 
