@@ -15,71 +15,7 @@
         <div id="overview"></div>
         <div id="content">
             <h1>A - Interaktiv Historiefortelling</h1>
-            <p>For å komme i gang med å lage en interaktiv historie i Godot kan du
-bruke denne malen: <a href="../files/Mal_InteraktivHistoriefortelling.zip">Mal for interaktiv historiefortelling</a></p>
-<p>Når du åpner prosjektet i Godot, har du en mappe som heter
-<em>template</em> åpne den og åpne senen. <em>(sener har .tscn som
-filending)</em></p>
-<p><img src="../media/A_template.png" /></p>
-<p>Du åpner den ved å dobbeltklikke, så ser du at en fane med samme nav
-dukker opp i toppen av vinduet. Du skal ikke skrive historien din her,
-denne fungerer som en mal for hvordan oppsettet til senene dine skal se
-ut.</p>
-<p><img src="../media/A_laginherit.png" /></p>
-<p>For å lage en ny sene, høyreklikk på template, og velg “New inherited
-Scene”.</p>
-<p><img src="../media/A_ulagretInherit.png" /></p>
-<p>Den dukker opp som en ny fane, lurt å lagre den med en gang. <em>(cmd
-+ s)</em>. I denne senen kan du begynne å lage historien din. Elementene
-i senen, nodene, ser du til venstre av vinduet. Klikk på dem for å
-forandre på innholdet. Du kan legge til flere noder om du ønsker det,
-for eksempel flere bilder. For å legge til flere valg, pass på å
-duplisere <em>Option1</em> knappen.</p>
-<p><img src="../media/A_nyscene.gif" /></p>
-<p>Sett senen du ønsker å starte i til hovedsene ved å høyreklikke på
-den og velg “Set as Main Scene”</p>
-<p><img src="../media/A_setStart.png" /></p>
-<p>For at spilleren skal kunne gå til andre sener, må du legge til en
-link i knappene. Dette kan du gjøre ved å dra en av sene-filene dine
-over i <em>Scene Path</em> feltet på knappen. For å teste spillet, klikk
-på <em>play</em> knappen øverst i vinduet. For å teste fra senen du
-redigerer på, klikk på filmklapperen med et <em>play</em> ikon i
-seg.</p>
-<p><img src="../media/A_sceneshift.gif" /></p>
-<p>Ved å redigere på <em>template.tscn</em> kan du forandre på utseenet
-til historien din. Etter at du har gjort forandringer, og lagret senen,
-så oppdaterer alle de andre senene seg til å matche den. Individuelle
-endringer du gjør på andre sener blir ikke overskrevet, så du kan f.eks
-ha en egen bakgrunn på enkelte sener.</p>
-<p><img src="../media/A_template.gif" /></p>
-<h1 id="tips">Tips</h1>
-<p>husk å ha orden i filene dine. Dersom du flytter en fil etter at den
-er blitt linket til, så kan linken bli brutt og må settes på nytt.</p>
-<p><img src="../media/A_orden.png" /></p>
-<p>For å få en oversikt over senene dine kan du kjøre “makeFlowchart”
-som ligger i prosjekt filene til template prosjektet.</p>
-<p><img src="../media/A_make.png" /></p>
-<p>Den generer en fil som heter <em>scene_flowchart.md</em>. Åpne denne
-med en markdown leser som støtter <em>mermaid</em>, for eksempel <a
-href="https://www.marktext.cc">MarkText</a>, eller i VS Code med en <a
-href="https://open-vsx.org/extension/bierner/markdown-mermaid">mermaid
-extension</a></p>
-<p><img src="../media/A_graf.png" /></p>
-<ul>
-<li><p>Grønn ramme = hoved senen</p></li>
-<li><p>Gul ramme = sene som ikke blir linket til</p></li>
-<li><p>Rød stiplet ramme = Link til sene er brutt</p></li>
-</ul>
-<p>I dette eksempelet ser vi at linken til senen som heter slott er
-brutt, det kan skje om du blant annet har gitt senen nytt navn, flyttet
-den til en annen mappe eller slettet den.</p>
-<h2 id="bbcode">BBCode</h2>
-<p><img src="../media/A_BBCode.gif" /></p>
-<p>Noden som er satt opp i malen støtter BBCode som kan brukes til
-styling. det fungerer veldig likt html tagger. [b]denne teksten blir
-bold[/b]. Ta en titt i <a
-href="https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html#reference">Godot
-dokumentasjonen</a> for å se hvordan det kan brukes.</p>
+            
         </div>
     </div>
 </body>
