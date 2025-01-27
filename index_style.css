@@ -1,0 +1,39 @@
+ul {
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+li {
+    width: 300px; 
+    border: 1px solid #ccc; 
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+li img {
+    width: 100%; /* Bildet får samme bredde som boksen */
+    max-width: 300px; /* Maksimal bredde 300px */
+    height: auto;
+    max-height: 125px; /* Maksimal høyde 125px */
+    object-fit: cover; /* Bildet skalerer for å dekke området */
+    margin-bottom: 10px; /* Litt luft under bildet */
+}
+
+li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e5ba1;
+}
+li a:hover {
+    color: #0056b3;
+}
+li p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
