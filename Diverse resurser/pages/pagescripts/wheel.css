@@ -1,0 +1,37 @@
+.wheelContainer {
+    display: flex;  
+    position: relative;
+
+}
+
+.wheelSegment {
+    flex: 1;
+}
+.wheel{
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 0%;
+
+}
+
+#inner{
+    top:11%;
+    left: 57.5%;
+    width: 35%;
+    transition: 70ms;
+}
+
+#strips{
+    display: none;
+}
+  
+
+@media (max-width: 870pt) {
+    #wheels{
+        display: none;
+    }
+    #strips{
+        display: block;
+    }
+}

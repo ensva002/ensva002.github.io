@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel=icon type=image/svg+xml href=../favicon.svg>
+	    <link rel=stylesheet href=style.css>
+	    <link id="codeStyle" rel=stylesheet href=prism.css>
+	    <script type=module src=script.js></script>
+	    <script type=module src=prism.js></script>
+	    <title>3 - Python Referanse</title>
+	</head>
+	<body>
+	    <div id="canvas">
+	        <div id="overview"></div>
+	        <div id="content">
+	            <h1>3 - Python Referanse</h1>
+	            <h2 id="variabler-og-datatyper">Variabler og Datatyper</h2>
+<p>I Python kan du lagre data i variabler. En variabel kan sees på som
+en boks hvor du kan lagre informasjon.</p>
+<pre class="language-gdscript"><code>number = 10
+text = &quot;Hei, verden!&quot;</code></pre>
+<p>Datatyper inkluderer blant annet heltall (<code>int</code>), flyttall
+(<code>float</code>), strenger (<code>str</code>), og booleans
+(<code>bool</code>).</p>
+<h2 id="input-og-output">Input og Output</h2>
+<p>For å samhandle med brukeren, kan du bruke <code>input()</code> for å
+motta input og <code>print()</code> for å vise output.</p>
+<pre class="language-gdscript"><code>name = input(&quot;Hva heter du? &quot;)
+print(&quot;Hei, &quot; + name + &quot;!&quot;)</code></pre>
+<h2 id="betingelser">Betingelser</h2>
+<p>Betingelser lar deg utføre forskjellige handlinger basert på om en
+betingelse er sann eller ikke.</p>
+<pre class="language-gdscript"><code>age = int(input(&quot;Hvor gammel er du? &quot;))
+if age &gt;= 18:
+    print(&quot;Du er voksen.&quot;)
+else:
+    print(&quot;Du er barn.&quot;)</code></pre>
+<h2 id="løkker">Løkker</h2>
+<p>Løkker gjør at du kan gjenta kode flere ganger.</p>
+<h3 id="while-løkke">While-løkke</h3>
+<pre class="language-gdscript"><code>count = 0
+while count &lt; 5:
+    print(&quot;Tallet er&quot;, count)
+    count += 1</code></pre>
+<h3 id="for-løkke">For-løkke</h3>
+<pre class="language-gdscript"><code>for i in range(5):
+    print(&quot;Tallet er&quot;, i)</code></pre>
+<h2 id="lister">Lister</h2>
+<p>Lister lar deg lagre flere verdier i en enkelt variabel.</p>
+<pre class="language-gdscript"><code>fruits = [&quot;eple&quot;, &quot;banan&quot;, &quot;kirsebær&quot;]
+print(fruits[0])  # Utskrift: eple</code></pre>
+<h2 id="funksjoner">Funksjoner</h2>
+<p>Funksjoner lar deg definere en blokk med kode som du kan kjøre flere
+ganger.</p>
+<pre class="language-gdscript"><code>def greet(name):
+    print(&quot;Hei &quot; + name + &quot;!&quot;)
+
+greet(&quot;Anna&quot;)</code></pre>
+<h2 id="feilhåndtering">Feilhåndtering</h2>
+<p>Feilhåndtering i Python gjøres vanligvis med <code>try</code> og
+<code>except</code> blokker.</p>
+<pre class="language-gdscript"><code>try:
+    number = int(input(&quot;Skriv inn et tall: &quot;))
+except ValueError:
+    print(&quot;Det er ikke et tall!&quot;)</code></pre>
+<h2 id="arbeid-med-strenger">Arbeid med Strenger</h2>
+<p>Strenger i Python kan manipuleres på forskjellige måter, for eksempel
+gjennom å bruke indeksering eller funksjoner.</p>
+<pre class="language-gdscript"><code>message = &quot;Hei, verden!&quot;
+print(message[0])  # Utskrift: H
+print(message.lower())  # Utskrift: hei, verden!</code></pre>
+<p>Med disse grunnleggende konseptene skal du være godt rustet til å
+starte med Python-programmering og løse varierte oppgaver.</p>
+<h2 id="importering-av-moduler">Importering av Moduler</h2>
+<p>I Python kan du utvide funksjonaliteten i dine programmer ved å
+importere moduler. En modul er en fil som inneholder Python-kode. Noen
+moduler er innebygde, mens andre kan installeres fra tredjeparter.</p>
+<h3 id="hvordan-importere">Hvordan Importere</h3>
+<p>For å importere en modul bruker du <code>import</code>-nøkkelordet.
+Du kan også importere spesifikke funksjoner fra en modul.</p>
+<pre class="language-gdscript"><code>import math
+print(math.sqrt(16))  # Utskrift: 4.0
+
+from datetime import datetime
+print(datetime.now())  # Utskrift: (nåværende dato og tid)</code></pre>
+<h3 id="bruk-av-alias">Bruk av Alias</h3>
+<p>Du kan gi en modul et alias for å forenkle koden.</p>
+<pre class="language-gdscript"><code>import math as m
+print(m.sqrt(25))  # Utskrift: 5.0</code></pre>
+<h2 id="arbeid-med-strenger-utvidet">Arbeid med Strenger (Utvidet)</h2>
+<p>Strenger i Python er svært fleksible og kan manipuleres på mange
+måter.</p>
+<h3 id="slicing">Slicing</h3>
+<p>Du kan “slice” strenger for å hente ut deler av dem.</p>
+<pre class="language-gdscript"><code>text = &quot;Python er gøy!&quot;
+print(text[7:9])  # Utskrift: er</code></pre>
+<h3 id="finn-og-erstatt">Finn og Erstatt</h3>
+<p>Finn understrenger og erstatt dem med noe annet.</p>
+<pre class="language-gdscript"><code>message = &quot;Hei verden&quot;
+new_message = message.replace(&quot;verden&quot;, &quot;alle&quot;)
+print(new_message)  # Utskrift: Hei alle</code></pre>
+<h3 id="formatering">Formatering</h3>
+<p>Python tilbyr flere måter å formatere strenger på, noe som er nyttig
+for å bygge dynamiske meldinger.</p>
+<pre class="language-gdscript"><code>name = &quot;Anna&quot;
+age = 25
+print(f&quot;{name} er {age} år gammel.&quot;)  # Utskrift: Anna er 25 år gammel.</code></pre>
+<h2 id="grunnleggende-om-feil-og-unntak">Grunnleggende om Feil og
+Unntak</h2>
+<p>Når du programmerer, vil du uunngåelig møte feil. Å forstå
+forskjellene mellom syntaksfeil og unntak er viktig.</p>
+<ul>
+<li><strong>Syntaksfeil</strong> oppstår når Python ikke forstår koden
+på grunn av skrivefeil eller feil i koden din.</li>
+<li><strong>Unntak</strong> oppstår når koden er syntaktisk korrekt, men
+programmet støter på en feil under utførelsen.</li>
+</ul>
+<p>Lær hvordan du bruker <code>try</code> og <code>except</code> for å
+håndtere unntak slik at programmet ditt kan reagere på feil på en
+kontrollert måte.</p>
+<h2 id="løkker-utvidet">Løkker (Utvidet)</h2>
+<h3 id="for-løkker-med-lister">For-løkker med Lister</h3>
+<p>For-løkker er ideelle for å iterere over elementer i en liste.</p>
+<pre class="language-gdscript"><code>fruits = [&quot;eple&quot;, &quot;banan&quot;, &quot;kirsebær&quot;]
+for fruit in fruits:
+    print(fruit)</code></pre>
+<h3 id="while-løkker-med-betingelser">While-løkker med Betingelser</h3>
+<p>While-løkker fortsetter å kjøre så lenge en betingelse er sann.</p>
+<pre class="language-gdscript"><code>number = 5
+while number &gt; 0:
+    print(number)
+    number -= 1</code></pre>
+	        </div>
+	    </div>
+	</body>
+	</html>
