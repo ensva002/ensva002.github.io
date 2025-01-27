@@ -5,27 +5,27 @@ ul {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20pt;
 }
 li {
-    width: 300px; 
-    border: 1px solid #ccc; 
-    padding: 15px;
-    border-radius: 8px;
+    width: 300pt; 
+    border: 1pt solid #ccc; 
+    padding: 15pt;
+    border-radius: 8pt;
     background-color: #f9f9f9;
 }
 
 li img {
-    width: 100%; /* Bildet får samme bredde som boksen */
-    max-width: 300px; /* Maksimal bredde 300px */
+    width: 100%; 
+    max-width: 300pt; 
     height: auto;
-    max-height: 125px; /* Maksimal høyde 125px */
-    object-fit: cover; /* Bildet skalerer for å dekke området */
-    margin-bottom: 10px; /* Litt luft under bildet */
+    max-height: 125pt; 
+    object-fit: cover;
+    margin-bottom: 10pt;
 }
 
 li a {
-    font-size: 18px;
+    font-size: 18pt;
     font-weight: bold;
     color: #1e5ba1;
 }
@@ -33,7 +33,7 @@ li a:hover {
     color: #0056b3;
 }
 li p {
-    margin-top: 10px;
-    font-size: 14px;
+    margin-top: 10pt;
+    font-size: 14pt;
     color: #555;
 }
