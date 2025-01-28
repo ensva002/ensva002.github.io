@@ -24,16 +24,33 @@ fetch('../pagelist.json')
     })
     .catch(error => console.error('Error:', error));
 
-function addLogo(overview){
-    let logo = document.createElement('img');
-    logo.src = "../logo.svg"
-    logo.style.width = "80%"
-    logo.style.padding = "10pt"
-    logo.addEventListener("click",function(){
-        window.location.href = "../../index.html"
-    })
-    overview.insertBefore(logo,overview.firstChild)
-}
+    function addLogo(overview) {
+        let logo = document.createElement('img');
+        const fallbacks = ['../logo.svg', '../logo.webp', '../logo.png', '../logo.jpg'];
+        let current = 0;
+    
+        function tryNext() {
+            if (current < fallbacks.length) {
+                logo.src = fallbacks[current++];
+            } else {
+                console.error('No logo.');
+            }
+        }
+    
+        logo.src = fallbacks[current++];
+        logo.onerror = tryNext;
+    
+        logo.style.width = "95%";
+        logo.style.padding = "0pt";
+        logo.style.marginBottom = "5pt";
+    
+        logo.addEventListener("click", function () {
+            window.location.href = "../../index.html";
+        });
+
+        overview.insertBefore(logo, overview.firstChild);
+    }
+    
 
 function addButton(){
     const content = document.getElementById("content")
@@ -61,6 +78,11 @@ function addButton(){
     let mode = JSON.parse(localStorage.getItem("mode"));
     let modeButton = document.createElement('button')
     modeButton.id = "mode"
+    modeButton.style.backgroundColor = "#FFFFFF"
+    modeButton.style.borderRadius = "30pt"
+    modeButton.style.padding = "2px"
+    modeButton.style.marginLeft = "10px"
+    modeButton.style.marginTop = "3px"
     let btnContentLight = "🌘"
     let btnContentDark = "☀️"
     modeButton.textContent = btnContentLight

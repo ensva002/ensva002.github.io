@@ -165,7 +165,7 @@ input{
     #overview {
         box-shadow: var(--drawer-shadow);
         position: absolute;
-        z-index: 1;
+        z-index: 1; /* sjekk at dette ikke ødelegger no */
         margin-left: var(--drawer-margin);
     }
     #toggle{
