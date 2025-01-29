@@ -1,3 +1,4 @@
 [Info]
 name = Godotkurs 2024
-description = Denne guiden var originalt lagd som supplement til forelesninger i et utviklingskurs, og skal over tid renskrives, utvides, og gjøres mer selvstendig. Denne guiden tar i hovedsak for seg bruk av Godot editoren, og forklarer ikke generelle programmeringsprinsipper utover det som er unikt for GDScript.
+description = Denne guiden var originalt lagd som supplement til forelesninger i et utviklingskurs. Denne guiden tar i hovedsak for seg bruk av Godot editoren, den forklarer ikke generelle programmeringsprinsipper utover det som er unikt for GDScript.
+
