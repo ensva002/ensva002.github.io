@@ -5,7 +5,7 @@
 
 ## Introduksjon til noder
 
-Scener i Godot er bygd opp av noder i en trestruktur. Noder er objekter med en rekke attributter. Det finnes hundrevis av forskjellige noder, og du kan definere dine egne typer, men dette skal vi se på senere. Den første *noden* i en scene kalles **root node**, og alle andre noder i scenen stammer fra den. Så før du kan gjøre noe som helst med scenen din, må du opprette en **root node**.
+Scener i Godot er bygd opp av noder i en trestruktur. Noder er objekter med en rekke attributter. Det finnes hundrevis av forskjellige noder, og du kan definere dine egne, men dette skal vi se på senere. Den første *noden* i en scene kalles **root node**, og alle andre noder i scenen stammer fra den. Så før du kan gjøre noe som helst med scenen din, må du opprette en **root node**.
 
 Vi begynner vanligvis med en av de grunnleggende nodene som Godot foreslår når vi åpner en tom scene.
 
@@ -19,11 +19,11 @@ Hver gang du endrer på attributter, vil du se at det dukker opp en rund pil ⟲
 
 ## Legge til en Sprite2D-node
 
-Nå skal vi legge til en **Sprite2D**-node. Klikk på **+** øverst i venstre hjørne av scenepanelet, finn `Sprite2D` i listen og klikk på **Create**. Nå har du en tom `Sprite2D`, og vi kan umiddelbart gi den en *tekstur* for å gjøre den synlig. Klikk i feltet hvor det står *<empty>* ved siden av *Texture*, velg *Quick Load...* nederst i listen, og velg *icon.svg*.
+Nå skal vi legge til en **Sprite2D**-node. Klikk på **+** øverst i venstre hjørne av scenepanelet, finn `Sprite2D` i listen og klikk på **Create**. Nå har du en tom `Sprite2D`, og vi kan med en gang gi den en *tekstur* for å gjøre den synlig. Klikk i feltet hvor det står *<empty>* ved siden av *Texture*, velg *Quick Load...* nederst i listen, og velg *icon.svg*.
 
 ![](../media/2node3.gif)
 
-Om vi ser på inspektøren mens `Sprite2D` er valgt, legger vi merke til at den har `Transform` *(posisjon, rotasjon, etc.)*, akkurat som `Node2D`, men i tillegg har den flere attributter som er unike for `Sprite2D`: **Texture**, **Offset**, **Animation** og **Region**.
+Om vi ser på inspektøren når `Sprite2D` er valgt, kan vi se at den har `Transform` *(posisjon, rotasjon, etc.)*, akkurat som `Node2D`, men i tillegg har den flere attributter som er unike for `Sprite2D`: **Texture**, **Offset**, **Animation** og **Region**.
 
 ![](../media/2node4.png)
 
@@ -32,13 +32,13 @@ Om vi ser på inspektøren mens `Sprite2D` er valgt, legger vi merke til at den 
 - **Røde** ikoner: 3D-noder  
 - **Grønne** ikoner: GUI-noder  
 - **Hvite** ikoner: Spesialnoder  
-- Noen noder har flerfargede ikoner, noe som betyr at de kan brukes både i 2D, 3D eller flere kontekster.
+- Noen noder har flerfargede ikoner, noe som betyr at de kan brukes både i flere kontekster.
 
 ![](../media/2node5.png)
 
 ## Arv
 
-Nå skal vi bruke *Move Mode* til å flytte litt på nodene våre.
+Nå skal vi bruke *Move Mode* til å flytte på nodene våre.
 
 ![](../media/2node6.gif)
 
@@ -50,7 +50,7 @@ Vi kan se hvilke noder som arver fra andre ved å se på linjen til venstre for 
 
 Arv gjelder også størrelse. Hvis vi skalerer `Node2D`, blir alle noder under den også større.
 
-  *Tenk deg at vi lager en planet og plasserer en person på den. Når vi flytter planeten, blir personen med, men personen kan bevege seg uten at planeten følger etter.*
+*Tenk deg at vi lager en planet og plasserer en person på den. Når vi flytter planeten, blir personen med, men personen kan bevege seg uten at planeten følger etter.*
 
 ![](../media/2node8.gif)
 
@@ -74,7 +74,7 @@ Nå kan vi klikke på **Run Project** ► øverst til høyre.
 
 ![](../media/2node12.png)
 
-Da får vi opp et vindu som vil se omtrent slik ut – dette er spillet vårt i kjøring.
+Da får vi opp et vindu som vil se omtrent slik ut – dette er spillet vårt som kjører.
 
 ![](../media/2node13.png)
 

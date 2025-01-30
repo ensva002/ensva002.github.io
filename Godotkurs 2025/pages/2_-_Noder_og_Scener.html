@@ -25,11 +25,10 @@ Sprite2D-node</a></li>
 <h2 id="introduksjon-til-noder">Introduksjon til noder</h2>
 <p>Scener i Godot er bygd opp av noder i en trestruktur. Noder er
 objekter med en rekke attributter. Det finnes hundrevis av forskjellige
-noder, og du kan definere dine egne typer, men dette skal vi se på
-senere. Den første <em>noden</em> i en scene kalles <strong>root
-node</strong>, og alle andre noder i scenen stammer fra den. Så før du
-kan gjøre noe som helst med scenen din, må du opprette en <strong>root
-node</strong>.</p>
+noder, og du kan definere dine egne, men dette skal vi se på senere. Den
+første <em>noden</em> i en scene kalles <strong>root node</strong>, og
+alle andre noder i scenen stammer fra den. Så før du kan gjøre noe som
+helst med scenen din, må du opprette en <strong>root node</strong>.</p>
 <p>Vi begynner vanligvis med en av de grunnleggende nodene som Godot
 foreslår når vi åpner en tom scene.</p>
 <p><img src="../media/2node1.gif" /></p>
@@ -50,13 +49,13 @@ standard.</p>
 <p>Nå skal vi legge til en <strong>Sprite2D</strong>-node. Klikk på
 <strong>+</strong> øverst i venstre hjørne av scenepanelet, finn
 <code>Sprite2D</code> i listen og klikk på <strong>Create</strong>. Nå
-har du en tom <code>Sprite2D</code>, og vi kan umiddelbart gi den en
+har du en tom <code>Sprite2D</code>, og vi kan med en gang gi den en
 <em>tekstur</em> for å gjøre den synlig. Klikk i feltet hvor det står
 <em><empty></em> ved siden av <em>Texture</em>, velg <em>Quick
 Load…</em> nederst i listen, og velg <em>icon.svg</em>.</p>
 <p><img src="../media/2node3.gif" /></p>
-<p>Om vi ser på inspektøren mens <code>Sprite2D</code> er valgt, legger
-vi merke til at den har <code>Transform</code> <em>(posisjon, rotasjon,
+<p>Om vi ser på inspektøren når <code>Sprite2D</code> er valgt, kan vi
+se at den har <code>Transform</code> <em>(posisjon, rotasjon,
 etc.)</em>, akkurat som <code>Node2D</code>, men i tillegg har den flere
 attributter som er unike for <code>Sprite2D</code>:
 <strong>Texture</strong>, <strong>Offset</strong>,
@@ -72,12 +71,11 @@ attributter som er unike for <code>Sprite2D</code>:
 <li><strong>Hvite</strong> ikoner: Spesialnoder<br />
 </li>
 <li>Noen noder har flerfargede ikoner, noe som betyr at de kan brukes
-både i 2D, 3D eller flere kontekster.</li>
+både i flere kontekster.</li>
 </ul>
 <p><img src="../media/2node5.png" /></p>
 <h2 id="arv">Arv</h2>
-<p>Nå skal vi bruke <em>Move Mode</em> til å flytte litt på nodene
-våre.</p>
+<p>Nå skal vi bruke <em>Move Mode</em> til å flytte på nodene våre.</p>
 <p><img src="../media/2node6.gif" /></p>
 <p>Legg merke til at når vi flytter <code>Node2D</code>, følger
 <code>Sprite2D</code> med. Men når vi flytter <code>Sprite2D</code>,
@@ -112,7 +110,7 @@ starter med.</p>
 høyre.</p>
 <p><img src="../media/2node12.png" /></p>
 <p>Da får vi opp et vindu som vil se omtrent slik ut – dette er spillet
-vårt i kjøring.</p>
+vårt som kjører.</p>
 <p><img src="../media/2node13.png" /></p>
 <p>Husk at koordinatene <strong>X = 0</strong> og <strong>Y = 0</strong>
 er øverst til venstre i vinduet. Det spilleren skal se, må være innenfor
