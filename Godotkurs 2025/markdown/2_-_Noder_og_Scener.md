@@ -44,19 +44,19 @@ Nå skal vi bruke *Move Mode* til å flytte litt på nodene våre.
 
 Legg merke til at når vi flytter `Node2D`, følger `Sprite2D` med. Men når vi flytter `Sprite2D`, forblir `Node2D` på plass. Dette skyldes **arv** – en node arver attributtene fra noden den ligger under.
 
-*Tenk deg at vi lager en planet og plasserer en person på den. Når vi flytter planeten, blir personen med, men personen kan bevege seg uten at planeten følger etter.*
-
-![](../media/2node8.gif)
-
 Vi kan se hvilke noder som arver fra andre ved å se på linjen til venstre for noden i scenelisten. Her ser vi at `Sprite2D` peker opp på `Node2D`.
 
 ![](../media/2node7.png)
 
 Arv gjelder også størrelse. Hvis vi skalerer `Node2D`, blir alle noder under den også større.
 
+  *Tenk deg at vi lager en planet og plasserer en person på den. Når vi flytter planeten, blir personen med, men personen kan bevege seg uten at planeten følger etter.*
+
+![](../media/2node8.gif)
+
 ## Lagre og kjøre scenen
 
-Over viewporten finner vi fanene for åpne scener. Her ser vi scenen vi har jobbet på. Den heter *[unsaved]* fordi vi ikke har lagret den ennå. Symbolet _(*)_ betyr at vi har ulagrede endringer.
+Over viewporten finner vi fanene for åpne scener. Her ser vi scenen vi har jobbet på. Den heter *[unsaved]* fordi vi ikke har lagret den ennå. Symbolet (*) betyr at vi har ulagrede endringer.
 
 ![](../media/2node9.png)
 
