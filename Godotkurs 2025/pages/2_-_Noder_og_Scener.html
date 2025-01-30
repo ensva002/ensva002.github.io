@@ -15,83 +15,102 @@
 	        <div id="overview"></div>
 	        <div id="content">
 	            <h1>2 - Noder og Scener</h1>
-	            <p>Scener i Godot er bygd opp av noder i en tre-struktur. Noder er
-objekter med en rekke atributter, det er hundrevis forskjellige noder,
-og du kan definere egene typer noder, men dette skal vi se på senere.
-Den første <em>noden</em> er kalt en <strong>root node</strong>, og alle
-andre noder stammer på den. Så før du kan gjøre noe som helst med scenen
-din må du lage en <strong>root node</strong>.</p>
+	            <h1 id="introduksjon-til-noder-i-godot">Introduksjon til noder i
+Godot</h1>
+<p>Scener i Godot er bygd opp av noder i en trestruktur. Noder er
+objekter med en rekke attributter. Det finnes hundrevis av forskjellige
+noder, og du kan definere dine egne typer, men dette skal vi se på
+senere. Den første <em>noden</em> i en scene kalles <strong>root
+node</strong>, og alle andre noder i scenen stammer fra den. Så før du
+kan gjøre noe som helst med scenen din, må du opprette en <strong>root
+node</strong>.</p>
 <p>Vi begynner vanligvis med en av de grunnleggende nodene som Godot
-foreslår når vi sitter i en tom scene.</p>
+foreslår når vi åpner en tom scene.</p>
 <p><img src="../media/2node1.gif" /></p>
-<p>Om vi nå tar en titt i inspektøren på høyre side kan vi se
-atributtene til Node2D. <em>Om du ikke ser noe her så klikk på Node2D i
-Scene listen for å velge den.</em> Node2D er kun et punkt, med de mest
-grunnleggende atributtene som alle 2D noder har,
-<strong>Posisjon</strong>, <strong>Rotasjon</strong>,
-<strong>Størrelse</strong> og <strong>Skew</strong>. Siden Node2D kun er
-et punkt og ikke har noen fassong er det kun posisjon og rotasjon som
-gjør synlige endringer enn så lenge.</p>
+<p>Om vi nå tar en titt i inspektøren på høyre side, kan vi se
+attributtene til <code>Node2D</code>. <em>Om du ikke ser noe her, klikk
+på <code>Node2D</code> i scenelisten for å velge den.</em>
+<code>Node2D</code> er kun et punkt, med de mest grunnleggende
+attributtene som alle 2D-noder har: <strong>Posisjon</strong>,
+<strong>Rotasjon</strong>, <strong>Størrelse</strong> og
+<strong>Skew</strong>. Siden <code>Node2D</code> kun er et punkt og ikke
+har noen form, er det foreløpig kun posisjon og rotasjon som gir synlige
+endringer.</p>
 <p><img src="../media/2node2.gif" /></p>
-<p>Hver gang du endrer på atributter vil du se det dukker opp en rund
-pil ⟲ , klikk på denne for å sette verdiene tilbake til standard.</p>
-<p>Nå skal vi legge til en <strong>Sprite2D</strong> node. Klikk på
-<strong>+</strong> oppe i venstre hjørnet av Scene vinduet, finn frem
-Sprite2D i listen og klikk på <strong>Create</strong>. Nå har du en tom
-Sprite2D, og vi kan med en gang gi den en <em>tekstur</em> for å gjøre
-den synlig, klikk i feltet hvor det står <em><empty></em> ved siden av
-<em>Texture</em>, og velg <em>Quick Load…</em> nederst i listen, og velg
-<em>icon.svg</em></p>
+<p>Hver gang du endrer på attributter, vil du se at det dukker opp en
+rund pil ⟲. Klikk på denne for å sette verdiene tilbake til
+standard.</p>
+<h2 id="legge-til-en-sprite2d-node">Legge til en Sprite2D-node</h2>
+<p>Nå skal vi legge til en <strong>Sprite2D</strong>-node. Klikk på
+<strong>+</strong> øverst i venstre hjørne av scenepanelet, finn
+<code>Sprite2D</code> i listen og klikk på <strong>Create</strong>. Nå
+har du en tom <code>Sprite2D</code>, og vi kan umiddelbart gi den en
+<em>tekstur</em> for å gjøre den synlig. Klikk i feltet hvor det står
+<em><empty></em> ved siden av <em>Texture</em>, velg <em>Quick
+Load…</em> nederst i listen, og velg <em>icon.svg</em>.</p>
 <p><img src="../media/2node3.gif" /></p>
-<p>Om vi tar en titt på inspektøren når vi har valgt Sprite2D ser vi at
-den har Transform <em>(posisjon, rotasjon, etc)</em> akurat som Node2D,
-men i tilegg så har den noen ekstra atributter som er unikt for
-Sprite2D. Tekstur, Offset, Animasjon og Region.</p>
+<p>Om vi ser på inspektøren mens <code>Sprite2D</code> er valgt, legger
+vi merke til at den har <code>Transform</code> <em>(posisjon, rotasjon,
+etc.)</em>, akkurat som <code>Node2D</code>, men i tillegg har den flere
+attributter som er unike for <code>Sprite2D</code>:
+<strong>Texture</strong>, <strong>Offset</strong>,
+<strong>Animation</strong> og <strong>Region</strong>.</p>
 <p><img src="../media/2node4.png" /></p>
-<p><em>Tips, alle noder som har <strong>blå</strong> ikoner er 2D noder,
-som alle bygger oppå Node2D. Det finnes også 3D noder (rød), GUI noder
-(grønne), spesial noder (hvite). Det finnes også noen som gjelder både
-2D, 3D eller fler, disse har flerfargete ikoner</em> <img
-src="../media/2node5.png" /></p>
+<p><em>Tips:</em> Alle noder med <strong>blå</strong> ikoner er
+2D-noder, som alle bygger på <code>Node2D</code>. Det finnes også:</p>
+<ul>
+<li><strong>Røde</strong> ikoner: 3D-noder<br />
+</li>
+<li><strong>Grønne</strong> ikoner: GUI-noder<br />
+</li>
+<li><strong>Hvite</strong> ikoner: Spesialnoder<br />
+</li>
+<li>Noen noder har flerfargede ikoner, noe som betyr at de kan brukes
+både i 2D, 3D eller flere kontekster.</li>
+</ul>
+<p><img src="../media/2node5.png" /></p>
 <h2 id="arv">Arv</h2>
 <p>Nå skal vi bruke <em>Move Mode</em> til å flytte litt på nodene
 våre.</p>
 <p><img src="../media/2node6.gif" /></p>
-<p>Legg merke til at når vi flytter Node2D følger Sprite2D med, men når
-vi flytter Sprite2D blir Node2D stående. Dette er på grunn av
-<strong>arv</strong>. En node arver atributter til noden de ligger
-under.</p>
-<p><em>Tenk deg, vi lager en planet, og så setter vi en person på
-planeten, når vi flytter planeten blir figuren med, men personen kan
-bevege seg uten at planeten følger den</em>.</p>
+<p>Legg merke til at når vi flytter <code>Node2D</code>, følger
+<code>Sprite2D</code> med. Men når vi flytter <code>Sprite2D</code>,
+forblir <code>Node2D</code> på plass. Dette skyldes <strong>arv</strong>
+– en node arver attributtene fra noden den ligger under.</p>
+<p><em>Tenk deg at vi lager en planet og plasserer en person på den. Når
+vi flytter planeten, blir personen med, men personen kan bevege seg uten
+at planeten følger etter.</em></p>
 <p><img src="../media/2node8.gif" /></p>
-<p>Vi kan se hva nodene arver fra ved å se på streken til venstre for
-noden i Scene vinduet, her ser vi at Sprite2D peker opp på Node2D.</p>
+<p>Vi kan se hvilke noder som arver fra andre ved å se på linjen til
+venstre for noden i scenelisten. Her ser vi at <code>Sprite2D</code>
+peker opp på <code>Node2D</code>.</p>
 <p><img src="../media/2node7.png" /></p>
-<p>Arv gjelder også størrelse, gjør vi Node2D større, blir alt som
-ligger under også større.</p>
-<h2 id="lagre-og-spille-av-scene">Lagre og spille av scene</h2>
-<p>Over viewporten er fanene for åpne scener, her har vi en scene,
-scenen vi har jobbet på. den heter <em>[unsaved]</em> fordi vi ikke har
-lagret den enda. Dette symbolet _(*)_ betyr at vi har ulagrede
-endringer.</p>
+<p>Arv gjelder også størrelse. Hvis vi skalerer <code>Node2D</code>,
+blir alle noder under den også større.</p>
+<h2 id="lagre-og-kjøre-scenen">Lagre og kjøre scenen</h2>
+<p>Over viewporten finner vi fanene for åpne scener. Her ser vi scenen
+vi har jobbet på. Den heter <em>[unsaved]</em> fordi vi ikke har lagret
+den ennå. Symbolet _(*)_ betyr at vi har ulagrede endringer.</p>
 <p><img src="../media/2node9.png" /></p>
-<p>For å lagre scenen gå på <em>Scene &gt; Save Scene</em>, eventuelt
-bruk Ctrl+S</p>
-<p>Gi scenen et navn, ellers får den navnet til den første noden i
-scenen, dette blir fort rotete. <img src="../media/2node10.gif" /></p>
-<p>Og nå som vi har en scene så kan vi kjøre “spillet” vårt. Scenen har
-nå havnet blandt prosjektfilene våre. Høyreklikk på den og velg Set as
-Main Scene. Du kan kun ha èn Main Scene i prosjektet ditt, dette er
-scenen spillet går til når spillet startes. <img
-src="../media/2node11.png" /></p>
-<p>Nå kan vi klikke på Play oppe til høyre. <img
-src="../media/2node12.png" /></p>
-<p>Og vi vill få et vindu som vil se omtrent slik ut, dette er spillet
-vårt som kjører. <img src="../media/2node13.png" /></p>
-<p>Kordinatene X=0 og Y=0 er oppe til venstre i vinduet. Husk det som
-ble nevnt i del 1, at det spilleren skal se må være inne i den blå
-firkanten.</p>
+<p>For å lagre scenen går du til <em>Scene &gt; Save Scene</em>, eller
+bruk <strong>Ctrl+S</strong>.</p>
+<p>Gi scenen et navn – hvis ikke, får den navnet til den første noden i
+scenen, noe som kan bli rotete i lengden.</p>
+<p><img src="../media/2node10.gif" /></p>
+<p>Når scenen er lagret, vil den vises blant prosjektfilene våre.
+Høyreklikk på den og velg <em>Set as Main Scene</em>. Du kan kun ha én
+<strong>Main Scene</strong> i prosjektet ditt – dette er scenen spillet
+starter med.</p>
+<p><img src="../media/2node11.png" /></p>
+<p>Nå kan vi klikke på <strong>Run Project</strong> ► øverst til
+høyre.</p>
+<p><img src="../media/2node12.png" /></p>
+<p>Da får vi opp et vindu som vil se omtrent slik ut – dette er spillet
+vårt i kjøring.</p>
+<p><img src="../media/2node13.png" /></p>
+<p>Husk at koordinatene <strong>X = 0</strong> og <strong>Y = 0</strong>
+er øverst til venstre i vinduet. Det spilleren skal se, må være innenfor
+den blå firkanten i viewporten.</p>
 	        </div>
 	    </div>
 	</body>
