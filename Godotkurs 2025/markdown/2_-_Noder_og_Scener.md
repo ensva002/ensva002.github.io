@@ -1,4 +1,9 @@
-# Introduksjon til noder i Godot
+1. [Introduksjon til noder](#introduksjon-til-noder)
+2. [Legge til en Sprite2D-node](#legge-til-en-sprite2d-node)
+3. [Arv](#arv)
+4. [Lagre og kjøre scenen](#lagre-og-kjøre-scenen)
+
+## Introduksjon til noder
 
 Scener i Godot er bygd opp av noder i en trestruktur. Noder er objekter med en rekke attributter. Det finnes hundrevis av forskjellige noder, og du kan definere dine egne typer, men dette skal vi se på senere. Den første *noden* i en scene kalles **root node**, og alle andre noder i scenen stammer fra den. Så før du kan gjøre noe som helst med scenen din, må du opprette en **root node**.
 
