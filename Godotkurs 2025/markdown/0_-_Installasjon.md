@@ -17,9 +17,13 @@ Gå til [https://godotengine.org/](https://godotengine.org/) og last ned ønsket
 
 Pakk ut **.zip**-filen. Godot kan kjøres fra hvor som helst, så legg den et sted som passer for å holde maskinen ryddig.
 
+![](../media/0_install_l2.gif)
+
 ### Metode 2: Installer via en pakkebehandler
 
 Godot er også tilgjengelig i en rekke pakkebrønner. Bare pass på at du laster ned riktig versjon.
+
+![](../media/0_install_l3.gif)
 
 ---
 
@@ -49,6 +53,6 @@ brew install godot
 
 ## Andre metoder
 
-Du kan laste ned Godot fra [Steam](https://store.steampowered.com/app/404790/Godot_Engine/), men dette er ikke anbefalt, ettersom du har mindre kontroll over når oppdateringer installeres.
+Du kan laste ned Godot fra [Steam](https://store.steampowered.com/app/404790/Godot_Engine/), men dette er *ikke* anbefalt, ettersom du har mindre kontroll over når oppdateringer installeres.
 
 Du kan også kjøre Godot direkte i [nettleseren](https://editor.godotengine.org/releases/latest/). Dette er kun en *preview* og er ikke helt stabil, så denne metoden anbefales ikke for bruk i et prosjekt.
