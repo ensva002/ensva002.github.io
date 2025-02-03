@@ -2,7 +2,9 @@ Her skal vi se på fordelen av å kunne legge inn scener i andre scener som en n
 ![](../media/coin.png) ![](../media/gem.png)
 
 1.[Oppsett](#oppsett)
+
 2.[Gjennbruk](#gjennbruk)
+
 3.[Oppsummering](#oppsummering)
 
 ## Oppsett
