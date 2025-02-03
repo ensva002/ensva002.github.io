@@ -1,4 +1,9 @@
-Her skal vi se på fordelen av å kunne legge inn scener i andre scener som en node. Om du ønsker å følge med steg for steg så bruker vi disse to assetene fra [kenney.nl](https://kenney.nl/assets/platformer-pack-redux):  ![](../media/coin.png) ![](../media/gem.png)
+Her skal vi se på fordelen av å kunne legge inn scener i andre scener som en node. Om du ønsker å følge med steg for steg så bruker vi disse to assetene fra [kenney.nl](https://kenney.nl/assets/platformer-pack-redux):  
+![](../media/coin.png) ![](../media/gem.png)
+
+1.[Oppsett](#oppsett)
+2.[Gjennbruk](#gjennbruk)
+3.[Oppsummering](#oppsummering)
 
 ## Oppsett
 
