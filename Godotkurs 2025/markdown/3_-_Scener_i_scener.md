@@ -5,7 +5,7 @@ Her skal vi se på fordelen av å kunne legge inn scener i andre scener som en n
 
 2.[Gjennbruk](#gjennbruk)
 
-3.[Modifisering](#Modifisering)
+3.[Modifisering](#modifisering)
 
 3.[Oppsummering](#oppsummering)
 
@@ -27,7 +27,8 @@ Nå kan vi dra mynt scenen vi lagde (coin.tscn) inn i vår nye scene. Legg merke
 
 ![](../media/3scener4.gif)
 
-I Scene-panelet vil du se at den fylles opp med noder som heter MyntX, det betyr at når vi importerer en scene til en annen scene, så vil den noden få navnet til rot-noden sin, og ikke filnavnet til scenen. *(Husk, vi kalte rot-noden for `Mynt` og scenen for `Coin`)* 
+I Scene-panelet vil du se at den fylles opp med noder som heter MyntX, det betyr at når vi importerer en scene til en annen scene, så vil den noden få navnet til rot-noden sin, og ikke filnavnet til scenen. *(Husk, vi kalte rot-noden for `Mynt` og scenen for `Coin`)*.
+ 
 🎬 symbolet betyr at noden er en scene, du kan klikke på dette symbolet for å åpne scenen.
 
 ## Gjennbruk
