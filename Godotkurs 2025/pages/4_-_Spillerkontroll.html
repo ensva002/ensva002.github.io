@@ -18,6 +18,7 @@
 	            <p><em>I dette eksempelet bruker vi <a
 href="https://www.kenney.nl/assets/top-down-tanks-redux">Kenney top-down
 tanks</a> asset pakken.</em></p>
+<p><img src="../media/tanks-simple.png" /></p>
 <p>Så lenge karakteren vår er en CharacterBody2D, så er alt vi trenger
 for å bevege den å sette velocity og bruke move_and_slide() i
 _physics_process(delta) funksjonen.</p>
@@ -36,11 +37,10 @@ vi retning med fart og gir resultatet til velocity.</p>
 <pre class="language-gdscript"><code>velocity.x = move_direction.x * speed
 velocity.y = move_direction.y * speed</code></pre>
 <hr />
-<pre class="language-gdscript"><code>
-var speed = 200
+<pre class="language-gdscript"><code>var speed = 200
 func _physics_process(delta):
   var move_direction = Vector2.ZERO
-  
+
   if Input.is_action_pressed(&quot;ui_right&quot;):
     move_direction.x = 1
   elif Input.is_action_pressed(&quot;ui_left&quot;):
@@ -49,10 +49,9 @@ func _physics_process(delta):
     move_direction.y = 1
   elif Input.is_action_pressed(&quot;ui_up&quot;):
     move_direction.y = -1
-  
+
   velocity = Vector2(move_direction * speed)
-  move_and_slide()
-</code></pre>
+  move_and_slide()</code></pre>
 <p><img src="../media/4_spillerkontrol1.gif" /></p>
 <p>I neste eksempel har jeg byttet ut
 <code>velocity = Vector2(move_direction * speed)</code> med kode som
