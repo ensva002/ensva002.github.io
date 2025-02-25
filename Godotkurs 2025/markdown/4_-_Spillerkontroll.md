@@ -1,6 +1,8 @@
-*I dette eksempelet bruker vi [Kenney top-down tanks](https://www.kenney.nl/assets/top-down-tanks-redux) asset pakken.*
+*I dette eksempelet bruker vi [Kenney top-down tanks](https://www.kenney.nl/assets/top-down-tanks-redux) asset pakken. Lagre bildene under for et mindre utvalg fra pakken.*
 
-![](../media/tanks-simple.png)
+![tanks-smiple.png](../media/tanks-simple.png)
+
+![tanks-terrain.png](../media/tanks-terrain.png)
 
 Så lenge karakteren vår er en CharacterBody2D, så er alt vi trenger for å bevege den å sette velocity og bruke move_and_slide() i _physics_process(delta) funksjonen. 
 
@@ -43,7 +45,7 @@ func _physics_process(delta):
   elif Input.is_action_pressed("ui_up"):
     move_direction.y = -1
 
-  velocity = Vector2(move_direction * speed)
+  velocity = move_direction * speed
   move_and_slide()
 ```
 
@@ -71,3 +73,5 @@ velocity.y = move_toward(velocity.y, move_direction.y * speed, 5)
 om vi ønsker at bilen skal kunne gå diagonalt må vi bare bytte ut elif på linje 10 med if. i forrige eksempel. Det gjør at vi kan ta i mot både vertikal og horisontalt input på samme frame.
 
 ![](../media/4_spillerkontrol3.gif)
+
+---
