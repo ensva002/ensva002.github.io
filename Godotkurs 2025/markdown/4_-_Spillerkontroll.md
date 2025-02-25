@@ -49,7 +49,7 @@ Så lenge karakteren vår er en CharacterBody2D, så er alt vi trenger for å be
 ```gdscript
 extends CharacterBody2D
 
-func _physics_process(delta):
+func _physics_process(delta: float) -> void:
   velocity.x = 300
   move_and_slide()
 ```
@@ -73,7 +73,7 @@ velocity.y = move_direction.y * speed
 
 ```gdscript
 var speed = 200
-func _physics_process(delta):
+func _physics_process(delta: float) -> void:
   var move_direction = Vector2.ZERO
 
   if Input.is_action_pressed("ui_right"):

@@ -72,7 +72,7 @@ for å bevege den å sette velocity og bruke move_and_slide() i
 _physics_process(delta) funksjonen.</p>
 <pre class="language-gdscript"><code>extends CharacterBody2D
 
-func _physics_process(delta):
+func _physics_process(delta: float) -&gt; void:
   velocity.x = 300
   move_and_slide()</code></pre>
 <p><img src="../media/4_spillerkontrol4.gif" /></p>
@@ -86,7 +86,7 @@ vi retning med fart og gir resultatet til velocity.</p>
 velocity.y = move_direction.y * speed</code></pre>
 <hr />
 <pre class="language-gdscript"><code>var speed = 200
-func _physics_process(delta):
+func _physics_process(delta: float) -&gt; void:
   var move_direction = Vector2.ZERO
 
   if Input.is_action_pressed(&quot;ui_right&quot;):
