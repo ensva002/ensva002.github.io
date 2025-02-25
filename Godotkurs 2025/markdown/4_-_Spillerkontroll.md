@@ -12,8 +12,6 @@
 
 Et triks for å gjøre det mer interesant å jobbe er å unngå å jobbe med grå bokser. Så før vi begynner å programmere, skal vi sette opp en scene med noe grafikk, dette er lurt å gjøre selv om du venter på at de som er ansvarlige for å produsere grafikk, bare bruk noe annet midlertidig, *placeholder-art*.
 
-## Tanks
-
 Vi skal lage en tanks, som er et fysisk objekt som beveger seg. For dette kan vi bruke *CharacterBody2D*
 
 ![](../media/4-charbod.gif)
@@ -34,7 +32,7 @@ Lag en boks på samme måte, men i stedet for *CharacterBody2D* kan du bruke *St
 
 ![](../media/4-box.png)
 
-Lag så en ny scene som skal være levelen vår. Her kan du dra inn noen bokser og en tanks, og om du ønsker kan du bruke et *TileMapLayer* til å lage en bakgrunn.
+Lag så en ny scene som skal være levelen vår. Her kan du dra inn noen bokser og en tanks, og om du ønsker kan du bruke et *TileMapLayer* til å lage en bakgrunn. Se her for en mer detaljert forklaring [Godotkurs 2024 > 2.1_-_Tilemaps](https://ensva002.github.io/Godotkurs%202024/pages/2.1_-_Tilemaps.html)
 
 ![](../media/4-tilemap.gif)
 
