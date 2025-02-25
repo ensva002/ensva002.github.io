@@ -27,6 +27,44 @@ pakken.</em></p>
 <img src="../media/tanks-terrain.png" alt="tanks-terrain.png" />
 <figcaption aria-hidden="true">tanks-terrain.png</figcaption>
 </figure>
+<ol type="1">
+<li><a href="#oppsett">Oppsett</a></li>
+<li><a href="#kode">Kode</a></li>
+<li><a href="#kollisjon">Kollisjon</a></li>
+</ol>
+<h1 id="oppsett">Oppsett</h1>
+<p>Et triks for å gjøre det mer interesant å jobbe er å unngå å jobbe
+med grå bokser. Så før vi begynner å programmere, skal vi sette opp en
+scene med noe grafikk, dette er lurt å gjøre selv om du venter på at de
+som er ansvarlige for å produsere grafikk, bare bruk noe annet
+midlertidig, <em>placeholder-art</em>.</p>
+<h2 id="tanks">Tanks</h2>
+<p>Vi skal lage en tanks, som er et fysisk objekt som beveger seg. For
+dette kan vi bruke <em>CharacterBody2D</em></p>
+<p><img src="../media/4-charbod.gif" /></p>
+<p>Vi kan bruke <em>region</em> parameteret til å velge ut en del av et
+<em>sprite sheet</em> til å bruke som tanksens sprite.</p>
+<p><img src="../media/4-autoslice.gif" /></p>
+<p>For at karakteren vår skal kunne kolidere i ting må vi ha en
+<em>CollisionShape</em></p>
+<p><img src="../media/4-collisionwarning.png" /></p>
+<p>Legg til en <em>CollisionShape2D</em> og gi den en <em>Shape</em> som
+passer grafikken og juster størrelsen. Husk å gi scenen et navn og lagre
+den.</p>
+<p><img src="../media/4-character.gif" /></p>
+<p>Lag en boks på samme måte, men i stedet for <em>CharacterBody2D</em>
+kan du bruke <em>StaticBody2D</em>, siden denne ikke skal kunne flyttes
+på.</p>
+<p><img src="../media/4-box.png" /></p>
+<p>Lag så en ny scene som skal være levelen vår. Her kan du dra inn noen
+bokser og en tanks, og om du ønsker kan du bruke et
+<em>TileMapLayer</em> til å lage en bakgrunn.</p>
+<p><img src="../media/4-tilemap.gif" /></p>
+<p><img src="../media/4-ferdigScene.png" /></p>
+<p>Nå har vi en scene som er litt mer interesant som vi kan bruke når vi
+programmerer.</p>
+<hr />
+<h1 id="kode">Kode</h1>
 <p>Så lenge karakteren vår er en CharacterBody2D, så er alt vi trenger
 for å bevege den å sette velocity og bruke move_and_slide() i
 _physics_process(delta) funksjonen.</p>
@@ -78,6 +116,7 @@ elif på linje 10 med if. i forrige eksempel. Det gjør at vi kan ta i mot
 både vertikal og horisontalt input på samme frame.</p>
 <p><img src="../media/4_spillerkontrol3.gif" /></p>
 <hr />
+<h1 id="kollisjon">Kollisjon</h1>
 	        </div>
 	    </div>
 	</body>

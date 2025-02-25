@@ -4,6 +4,48 @@
 
 ![tanks-terrain.png](../media/tanks-terrain.png)
 
+1. [Oppsett](#oppsett)
+2. [Kode](#kode)
+3. [Kollisjon](#kollisjon)
+
+# Oppsett
+
+Et triks for å gjøre det mer interesant å jobbe er å unngå å jobbe med grå bokser. Så før vi begynner å programmere, skal vi sette opp en scene med noe grafikk, dette er lurt å gjøre selv om du venter på at de som er ansvarlige for å produsere grafikk, bare bruk noe annet midlertidig, *placeholder-art*.
+
+## Tanks
+
+Vi skal lage en tanks, som er et fysisk objekt som beveger seg. For dette kan vi bruke *CharacterBody2D*
+
+![](../media/4-charbod.gif)
+
+Vi kan bruke *region* parameteret til å velge ut en del av et *sprite sheet* til å bruke som tanksens sprite.
+
+![](../media/4-autoslice.gif)
+
+For at karakteren vår skal kunne kolidere i ting må vi ha en *CollisionShape*
+
+![](../media/4-collisionwarning.png)
+
+Legg til en *CollisionShape2D* og gi den en *Shape* som passer grafikken og juster størrelsen. Husk å gi scenen et navn og lagre den.
+
+![](../media/4-character.gif)
+
+Lag en boks på samme måte, men i stedet for *CharacterBody2D* kan du bruke *StaticBody2D*, siden denne ikke skal kunne flyttes på.
+
+![](../media/4-box.png)
+
+Lag så en ny scene som skal være levelen vår. Her kan du dra inn noen bokser og en tanks, og om du ønsker kan du bruke et *TileMapLayer* til å lage en bakgrunn.
+
+![](../media/4-tilemap.gif)
+
+![](../media/4-ferdigScene.png)
+
+Nå har vi en scene som er litt mer interesant som vi kan bruke når vi programmerer.
+
+---
+
+# Kode
+
 Så lenge karakteren vår er en CharacterBody2D, så er alt vi trenger for å bevege den å sette velocity og bruke move_and_slide() i _physics_process(delta) funksjonen. 
 
 ```gdscript
@@ -75,3 +117,5 @@ om vi ønsker at bilen skal kunne gå diagonalt må vi bare bytte ut elif på li
 ![](../media/4_spillerkontrol3.gif)
 
 ---
+
+# Kollisjon
