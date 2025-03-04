@@ -1,3 +1,9 @@
+Denne oppgaven består av 2 deler.
+
+
+
+## Del 1: sett sammen et Sprite Sheet
+
 Last ned dette bildet:
 
 ![](../media/A_sprite0.png)
@@ -50,8 +56,20 @@ Da skal vi ende med noe slik:
 
  ![](../media/2025-03-04-16-13-31-image.png)
 
+
+
+## Del 2: Lag ditt eget sprite sheet
+
 Når du er ferdig med dette kan du gå på [The Spriters Resource](https://www.spriters-resource.com/) for både inspirasjon, og hente ut flere sprites å øve deg med. 
+
+Når du føler at du har kontroll, begynn med å lage ditt eget spritesheet fra grunnen av. 
+
+
+
+## Bonus: Videre utforsking
+
+Ta en titt på denne videoen for noen tips til spill animasjon: [ANTICIPATION - The 12 Principles of Animation in Games - YouTube](https://www.youtube.com/watch?app=desktop&v=28s1Hv3Zqlo)
 
 Du kan også gå her [1 - Sprite Animation](https://ensva002.github.io/Godotkurs%202024/pages/1_-_Sprite_Animation.html) og se på hvordan du kan bruke spritesheetet i Godot. Det er en kjempefordel å vite hvordan det blir brukt i spillmotoren når du skal lage egene sprites.
 
-Når du føler at du har kontroll, prøv å lag ditt eget spritesheet fra grunnen av. Du kan bruke andre verktøy enn libresprite, ta gjerne en titt på hvordan du gjør det i f.eks. photoshop, om du er komfortabel med å bruke det.
+*Du kan bruke andre verktøy enn libresprite, ta gjerne en titt på hvordan du gjør det i f.eks. photoshop, om du er komfortabel med å bruke det.*
