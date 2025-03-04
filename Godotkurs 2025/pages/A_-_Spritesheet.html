@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel=icon type=image/svg+xml href=../favicon.svg>
+	    <link rel=stylesheet href=style.css>
+	    <link id="codeStyle" rel=stylesheet href=prism.css>
+	    <script type=module src=script.js></script>
+	    <script type=module src=prism.js></script>
+	    <title>A - Spritesheet</title>
+	</head>
+	<body>
+	    <div id="canvas">
+	        <div id="overview"></div>
+	        <div id="content">
+	            <h1>A - Spritesheet</h1>
+	            <p>Last ned dette bildet:</p>
+<p><img src="../media/A_sprite0.png" /></p>
+<p>Deres oppgave er nå å gjøre den klar til programmererne slik at de
+kan putte karakteren inn i spillet.</p>
+<p><img src="../media/8_lys6.gif" /></p>
+<p>I denne øvelsen bruker vi verktøyet <a
+href="https://libresprite.github.io/#!/downloads">Libresprite</a>.</p>
+<p>Start med å åpne bildet du lastet ned, da skal det se omtrent slik
+ut.</p>
+<p><img src="../media/2025-03-04-15-29-15-image.png" /></p>
+<p>Kjapp gjennomgang av arbeidsområdet. På høyre siden har vi verktøyene
+våre, på venstre siden er fargepaletten. Nede er tidslinjen til
+animasjonen. Og nede til høyre har vi en knapp merket
+<strong>1:1</strong> som åpner forhåndsvisningsvinduet, dette vinduet
+kan brukes til å vise hele bildet når du jobber zoomet inn, eller
+spiller av animasjonen du jobber på.</p>
+<p>Her har vi en ferdig allt vi trenger for å sette sammen en animasjon,
+så begynn med å marker ett element, og kopier det. Tips, la det være
+litt “luft” på sidene.</p>
+<p><img src="../media/A_sprite1.gif" /></p>
+<p>Lag et nytt dokument. Dimensjonene blir satt automatisk til å matche
+det du kopierte. Og lim inn.</p>
+<p><img src="../media/A_sprite2.gif" /></p>
+<p>Bruk <strong>Alt+b</strong> for å lage en ny “frame”, og lim inn
+neste element.</p>
+<p><img src="../media/A_sprite3.gif" /></p>
+<p>Det viktigste å passe på her er at animasjonen er stabil. Det har
+ikke jeg fått til her, vi ser karakteren spretter rundt når vi spiller
+av animasjonen.</p>
+<p><img src="../media/A_sprite4.gif" /></p>
+<p>Da må vi inn å justere, vi kan bruke “Onionskin” for å hjelpe med å
+plassere karakteren rett. Vi kan stille det inn til å vise et
+gjennomsiktig bilde av forrige frame, og bruke Move Tool til å flytte
+karakteren på plass.</p>
+<p><img src="../media/A_sprite5.gif" /></p>
+<p>Fortsett slik til alle bildene er brukt i animasjonen.</p>
+<p><img src="../media/spiller.gif" /></p>
+<p>Da kan vi eksportere animasjonen vår til et spritesheet. Gå til File
+&gt; Export Sprite Sheet. Før vi eksporterer kan vi gjøre noen
+instillinger på hvordan vi vil ha Sprite Sheetet satt opp. En
+tommelfinger-regel er at vi ønsker mest mulig kvadratisk bilde og minst
+mulig tomrom. Men vi ønsker også at Sprite Sheetet skal være ryddig, og
+lett å bruke. I dette tilfelle har hver del av animasjonen 3 bilder, så
+da setter vi Sheet Type til “By Rows” og 3 kolonner.</p>
+<p>Huk av på “Output FIle” og klikk på select file for å velge hva filen
+skal hete.</p>
+<p>Tips, dersom bildene dine går helt ut til kanten kan det være lurt å
+legge til “padding”, det gjør det mye enklere å dele opp animasjonen i
+Godot senere.</p>
+<p><img src="../media/A_sprite6.gif" /></p>
+<p>Da skal vi ende med noe slik:</p>
+<p><img src="../media/2025-03-04-16-13-31-image.png" /></p>
+<p>Når du er ferdig med dette kan du gå på
+https://www.spriters-resource.com/ for både inspirasjon, og hente ut
+flere sprites å øve deg med.</p>
+<p>Du kan også gå her <a
+href="https://ensva002.github.io/Godotkurs%202024/pages/1_-_Sprite_Animation.html">1
+- Sprite Animation</a> og se på hvordan du kan bruke spritesheetet i
+Godot. Det er en kjempefordel å vite hvordan det blir brukt i
+spillmotoren når du skal lage egene sprites.</p>
+<p>Når du føler at du har kontroll, prøv å lag ditt eget spritesheet fra
+grunnen av. Du kan bruke andre verktøy enn libresprite, ta gjerne en
+titt på hvordan du gjør det i f.eks. photoshop, om du er komfortabel med
+å bruke det.</p>
+	        </div>
+	    </div>
+	</body>
+	</html>
