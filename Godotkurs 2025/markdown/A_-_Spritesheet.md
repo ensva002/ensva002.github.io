@@ -50,7 +50,7 @@ Da skal vi ende med noe slik:
 
  ![](../media/2025-03-04-16-13-31-image.png)
 
-Når du er ferdig med dette kan du gå på [https://www.spriters-resource.com/](spriters-resource) for både inspirasjon, og hente ut flere sprites å øve deg med. 
+Når du er ferdig med dette kan du gå på [The Spriters Resource](https://www.spriters-resource.com/) for både inspirasjon, og hente ut flere sprites å øve deg med. 
 
 Du kan også gå her [1 - Sprite Animation](https://ensva002.github.io/Godotkurs%202024/pages/1_-_Sprite_Animation.html) og se på hvordan du kan bruke spritesheetet i Godot. Det er en kjempefordel å vite hvordan det blir brukt i spillmotoren når du skal lage egene sprites.
 
