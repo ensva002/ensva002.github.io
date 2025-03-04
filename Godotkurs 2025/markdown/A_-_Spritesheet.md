@@ -36,7 +36,7 @@ Da må vi inn å justere, vi kan bruke "Onionskin" for å hjelpe med å plassere
 
 Fortsett slik til alle bildene er brukt i animasjonen.
 
-![](../media/spiller.gif)
+![](../media/A_sprite7.gif)
 
 Da kan vi eksportere animasjonen vår til et spritesheet. Gå til File > Export Sprite Sheet. Før vi eksporterer kan vi gjøre noen instillinger på hvordan vi vil ha Sprite Sheetet satt opp. En tommelfinger-regel er at vi ønsker mest mulig kvadratisk bilde og minst mulig tomrom. Men vi ønsker også at Sprite Sheetet skal være ryddig, og lett å bruke. I dette tilfelle har hver del av animasjonen 3 bilder, så da setter vi Sheet Type til "By Rows" og 3 kolonner. 
 
