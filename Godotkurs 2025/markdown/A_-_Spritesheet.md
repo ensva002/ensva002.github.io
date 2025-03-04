@@ -1,14 +1,10 @@
 Last ned dette bildet:
 
-
-
 ![](../media/A_sprite0.png)
-
-
 
 Deres oppgave er nå å gjøre den klar til programmererne slik at de kan putte karakteren inn i spillet.
 
-![](../media/8_lys6.gif)
+![](../media/A_lys6.gif)
 
 I denne øvelsen bruker vi verktøyet [Libresprite](https://libresprite.github.io/#!/downloads).
 
