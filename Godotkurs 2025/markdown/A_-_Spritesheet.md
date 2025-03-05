@@ -1,7 +1,5 @@
 Denne oppgaven består av 2 deler.
 
-
-
 ## Del 1: sett sammen et Sprite Sheet
 
 Last ned dette bildet:
@@ -12,7 +10,7 @@ Deres oppgave er nå å gjøre den klar til programmererne slik at de kan putte 
 
 ![](../media/A_lys6.gif)
 
-I denne øvelsen bruker vi verktøyet [Libresprite](https://libresprite.github.io/#!/downloads).
+I denne øvelsen bruker vi verktøyet [Libresprite](https://libresprite.github.io/#!/downloads). *Kan også kjøres i nettleseren her: [LibreSprite Online](https://libresprite.github.io/online/)*
 
 Start med å åpne bildet du lastet ned, da skal det se omtrent slik ut.
 
@@ -56,15 +54,11 @@ Da skal vi ende med noe slik:
 
  ![](../media/2025-03-04-16-13-31-image.png)
 
-
-
 ## Del 2: Lag ditt eget sprite sheet
 
 Når du er ferdig med dette kan du gå på [The Spriters Resource](https://www.spriters-resource.com/) for både inspirasjon, og hente ut flere sprites å øve deg med. 
 
 Når du føler at du har kontroll, begynn med å lage ditt eget spritesheet fra grunnen av. 
-
-
 
 ## Bonus: Videre utforsking
 
