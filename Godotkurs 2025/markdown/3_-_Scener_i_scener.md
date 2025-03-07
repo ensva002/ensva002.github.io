@@ -12,7 +12,7 @@ Her skal vi se på fordelen av å kunne legge inn scener i andre scener som en n
 
 ## Oppsett
 
-Vi starter med å lage en tom 2D scene og legger inn en Sprite2D med myntgrafikken. Så lagrer vi scenen og kaller den for coin.tscn
+Vi starter med å lage en tom 2D scene og legger inn en Sprite2D med myntgrafikken. Så lagrer vi scenen og kaller den for *coin.tscn*
 
 ![](../media/3scener1.gif)
 
@@ -42,7 +42,7 @@ Her ser vi en fordel med denne måten å bygge opp scener, vi slipper å manuelt
 
 ## Modifisering
 
-En annen fordel er at dette gjør det enkelt å redigere på mange elementer på en gang. La oss si at leveldesigneren har ombestemt seg og ønsker at det skal være rader med 5 mynter i stedet for ringene med 6 mynter. Alt vi trenger da er å redigere på *coin_ring* scenen.
+En annen fordel er at dette gjør det enkelt å redigere på mange elementer på en gang. La oss si at leveldesigneren har ombestemt seg og ønsker at det skal være rader med fem mynter i stedet for ringene med seks mynter. Alt vi trenger da er å redigere på *coin_ring* scenen.
 
 ![](../media/3scener6.gif)
 

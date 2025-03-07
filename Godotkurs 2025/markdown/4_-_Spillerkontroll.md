@@ -114,6 +114,3 @@ om vi ønsker at bilen skal kunne gå diagonalt må vi bare bytte ut elif på li
 
 ![](../media/4_spillerkontrol3.gif)
 
----
-
-# Kollisjon
