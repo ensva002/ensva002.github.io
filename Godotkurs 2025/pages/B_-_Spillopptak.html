@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel=icon type=image/svg+xml href=../favicon.svg>
+	    <link rel=stylesheet href=style.css>
+	    <link id="codeStyle" rel=stylesheet href=prism.css>
+	    <script type=module src=script.js></script>
+	    <script type=module src=prism.js></script>
+	    <title>B - Spillopptak</title>
+	</head>
+	<body>
+	    <div id="canvas">
+	        <div id="overview"></div>
+	        <div id="content">
+	            <h1>B - Spillopptak</h1>
+	            <p>Godot har en innebygd funksjon for å ta opp video. Dette er praktisk
+når du for eksempel trenger innhold til en trailer for spillet ditt.</p>
+<h2 id="oppsett">Oppsett</h2>
+<p>Først må du sette opp hvor videofilen skal ligge og hva den skal
+hete.</p>
+<p>Gå til <em>Project &gt; Project Settings &gt; Movie Writer</em> og
+velg ønsket mappe og navn i <em>Movie File</em> feltet.
+<strong>Obs:</strong> Velg en mappe utenfor spillprosjektet.</p>
+<p><img src="../media/B_record1.gif" /></p>
+<p>På denne skjermen stiller du også inn kvaliteten på videoen.</p>
+<p><img src="../media/2025-03-11-11-09-43-image.png" /></p>
+<h2 id="opptak">Opptak</h2>
+<p>Så er det bare å slå på <em>Movie Maker mode</em> før du starter
+spillet, så taes det automatisk opp.</p>
+<p><img src="../media/B_record2.gif" /></p>
+<p>Du vil nok merke at spillet kjører tregere og mer hakkete enn vanlig.
+Dette er fordi godot passer på at hver <em>frame</em> blir ferdig
+rendret før den går videre til neste, når du spiller spill vanlig så kan
+frames hoppes over for å holde hastigheten oppe. Dette vil si at du kan
+ta opp en spill video i en mye høyere kvalitet enn det maskinen din
+klarer å kjøre vanligvis, det tar bare litt lenger tid.</p>
+<p><img src="../media/B_record3.gif" /></p>
+<p>Her tok jeg opp en video med 165fps, det ser kjempe tregt ut, men på
+den eksporterte videoen går det i rett hastighet.</p>
+<p><img src="../media/B_record4.gif" /></p>
+<p><strong>Obs:</strong> Når du har en video du er fornøyd med, enten
+flytt den eller gi den nytt navn, for om du tar opp på nytt så vil den
+overskrives.</p>
+<h2 id="fordeler-og-ulemper">Fordeler og ulemper</h2>
+<p>Fordelen er som sagt at du kan spille inn en video med høy kvalitet
+og framerate på relativt svakt hardware. Ulempen er at det kan være
+vanskeligere å spille spillet for å få naturlig “gameplay” å ta opp.</p>
+	        </div>
+	    </div>
+	</body>
+	</html>
