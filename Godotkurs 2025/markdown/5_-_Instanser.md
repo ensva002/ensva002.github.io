@@ -40,9 +40,9 @@ var bullet = preload("res://bullet.tscn")
 if Input.is_action_just_pressed("ui_accept"):
   var instance = bullet.instantiate()
   instance.global_position = Vector2(global_position)
-  get_parent().get_parent().add_child(instance)
+  get_tree().current_scene.add_child(instance)
 ```
 
-"bullet" variabelen laster inn bullet senen vi lagde tidligere, slik at den er klar til å legges inn når vi skal skyte. det lønner seg å preloade slik vi har gjort her, ellers kan det hende fryser i et par millisekunder hver gang vi skyter å spillet må hente kulen på nytt. bullet.instantiate() lager en instans av kulen i spillet. Dette betyr at vi har lagd en utgave av kulen, den ligger fremdeles å venter til vi sier hvor i scenetreet vi skal legge noden. Kanonen er en child node til tanken, og tanken er en childnode av rot noden, vi ønsker at kulen skal høre til rot noden, og ikke tanksen. Om kulen blir en child node av tanksen så vil kulen flytte på seg i forhold til tanksen, men her ønsker vi ingen kontroll over kulen etter at den er skutt. Derfor bruker vi get_parent() to ganger, og legger instansen av kulen vår som en child node til rot noden.
+"bullet" variabelen laster inn bullet senen vi lagde tidligere, slik at den er klar til å legges inn når vi skal skyte. det lønner seg å preloade slik vi har gjort her, ellers kan det hende fryser i et par millisekunder hver gang vi skyter å spillet må hente kulen på nytt. bullet.instantiate() lager en instans av kulen i spillet. Dette betyr at vi har lagd en utgave av kulen, den ligger fremdeles å venter til vi sier hvor i scenetreet vi skal legge noden. Kanonen er en child node til tanken, og tanken er en childnode av rot noden, vi ønsker at kulen skal høre til rot noden, og ikke tanksen. Om kulen blir en child node av tanksen så vil kulen flytte på seg i forhold til tanksen, men her ønsker vi ingen kontroll over kulen etter at den er skutt. Derfor bruker vi `get_tree().current_scene` for å legge den til som en child til den aktive scenens rot node.
 
 ![](../media/5_roter3.gif)

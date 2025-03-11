@@ -51,7 +51,7 @@ func _physics_process(delta):
 if Input.is_action_just_pressed(&quot;ui_accept&quot;):
   var instance = bullet.instantiate()
   instance.global_position = Vector2(global_position)
-  get_parent().get_parent().add_child(instance)</code></pre>
+  get_tree().current_scene.add_child(instance)</code></pre>
 <p>“bullet” variabelen laster inn bullet senen vi lagde tidligere, slik
 at den er klar til å legges inn når vi skal skyte. det lønner seg å
 preloade slik vi har gjort her, ellers kan det hende fryser i et par
@@ -63,8 +63,8 @@ tanken, og tanken er en childnode av rot noden, vi ønsker at kulen skal
 høre til rot noden, og ikke tanksen. Om kulen blir en child node av
 tanksen så vil kulen flytte på seg i forhold til tanksen, men her ønsker
 vi ingen kontroll over kulen etter at den er skutt. Derfor bruker vi
-get_parent() to ganger, og legger instansen av kulen vår som en child
-node til rot noden.</p>
+<code>get_tree().current_scene</code> for å legge den til som en child
+til den aktive scenens rot node.</p>
 <p><img src="../media/5_roter3.gif" /></p>
 	        </div>
 	    </div>
